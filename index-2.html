@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0b2545">
+<title>Ônibus Ao Vivo — Baixada Fluminense</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>Ônibus Ao Vivo <small>Baixada Fluminense</small></h1>
+  <form id="busca" autocomplete="off">
+    <input id="q" type="search" placeholder="Linha, destino ou ponto (ex.: 445, SENAI)">
+    <button type="submit">Buscar</button>
+  </form>
+</header>
+
+<div id="aviso-gps" class="aviso">⚠️ Posição dos ônibus em tempo real: <b>indisponível</b>. Nenhuma fonte pública de GPS foi confirmada para esta região.</div>
+
+<main><div id="mapa"></div></main>
+
+<nav>
+  <button id="btn-local">📍 Minha localização</button>
+  <button id="btn-fav">⭐ Favoritas</button>
+  <button id="btn-mapa">🗺️ Mapa</button>
+</nav>
+
+<section id="painel" hidden>
+  <button id="fechar" aria-label="Fechar">✕</button>
+  <div id="conteudo"></div>
+</section>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="dados.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

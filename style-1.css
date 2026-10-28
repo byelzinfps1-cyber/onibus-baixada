@@ -1,0 +1,23 @@
+:root{--escuro:#0b2545;--medio:#13315c;--claro:#8da9c4;--claro2:#eef4ed;--alerta:#ffd166}
+*{box-sizing:border-box}
+html,body{height:100%;margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
+body{display:flex;flex-direction:column;background:var(--escuro);color:#fff;padding-top:env(safe-area-inset-top)}
+header{padding:10px 12px;background:var(--escuro)}
+h1{font-size:1.2rem;margin:0 0 8px}h1 small{display:block;font-size:.75rem;font-weight:400;color:var(--claro)}
+#busca{display:flex;gap:8px}
+#q{flex:1;min-width:0;padding:14px;border:0;border-radius:12px;font-size:1rem}
+button{font:inherit;cursor:pointer}
+#busca button{padding:0 18px;border:0;border-radius:12px;background:var(--claro);color:var(--escuro);font-weight:700}
+.aviso{background:var(--alerta);color:#3b2f00;font-size:.8rem;padding:8px 12px}
+main{flex:1;min-height:0}#mapa{height:100%;width:100%}
+nav{display:flex;gap:8px;padding:10px 10px calc(10px + env(safe-area-inset-bottom));background:var(--escuro)}
+nav button{flex:1;padding:14px 4px;border:0;border-radius:12px;background:var(--medio);color:#fff;font-size:.85rem;font-weight:600}
+nav button:active{background:var(--claro);color:var(--escuro)}
+#painel{position:fixed;left:0;right:0;bottom:0;max-height:70%;overflow:auto;background:var(--claro2);color:var(--escuro);border-radius:18px 18px 0 0;padding:16px 16px calc(16px + env(safe-area-inset-bottom));box-shadow:0 -4px 20px #0006;z-index:1000}
+#fechar{position:absolute;top:8px;right:10px;border:0;background:none;font-size:1.3rem;color:var(--escuro)}
+#painel h2{margin:0 30px 6px 0;font-size:1.1rem}
+.item{display:block;width:100%;text-align:left;margin:8px 0;padding:14px;border:0;border-radius:12px;background:#fff;color:var(--escuro);font-size:.95rem;box-shadow:0 1px 3px #0002}
+.item small{display:block;color:#456}
+.tag{display:inline-block;padding:3px 8px;border-radius:8px;font-size:.75rem;font-weight:700;background:var(--alerta);color:#3b2f00}
+.btn{padding:12px 14px;border:0;border-radius:12px;background:var(--medio);color:#fff;font-weight:600;margin:4px 6px 4px 0}
+.nd{color:#7a5b00;font-style:italic}
